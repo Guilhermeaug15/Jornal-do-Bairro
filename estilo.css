@@ -1,0 +1,164 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color:#333
+
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid black;
+
+}
+
+header h1{
+    font-size: 3.0em;
+    margin: 0;
+
+}
+header p {
+    font-size: 2.0em;
+    margin: 0;
+}
+
+nav{
+    background-color: red;
+    padding: 10px 0;
+    text-align: center;
+}
+nav h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+ nav ul li a:hover{
+    background-color: #555;
+ }
+main{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black(0,0,0,0.1);   
+}
+main h2 {
+    color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+section h3 {
+    color: red
+    margin-topp 0;
+    border-bottom: 1px dashed red;
+    padding-bottom: 5px;
+}
+article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid red; 
+    border-radius: 3px;
+}
+article h4 {
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 0;
+}
+article aside p {
+    font-size: 0.9em;
+    color: gray;
+    font-style: italic;
+    margin-top: 10px;
+    border-top: 1px dotted white;
+    padding-top: 5px;
+}
+.video-container {
+    text-align: center;
+    margin: 15px 0;
+}
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+footer p, footer nav {
+    margin: 5px 0;
+}
+footer nav a:hover {
+    text-decoration: underline;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+#link {
+    color: red; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+.titulo-animado-transition {
+    color: white;
+    transform: scale(1); 
+    transition: color 0.3s ease-in-out transform 0.3s ease-in-out; 
+}
+.titulo-animado-transition:hover {
+    color: blue;
+    transform: scale(1.1) translateY(-5px); 
+    cursor: pointer;
+}
+.titulo-animado-animation {
+    animation-name: pulso; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+@keyframes pulso {
+    0% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05); 
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
